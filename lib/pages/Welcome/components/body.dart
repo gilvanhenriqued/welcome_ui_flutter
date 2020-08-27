@@ -11,32 +11,38 @@ class Body extends StatelessWidget {
     Size sizeScreen = MediaQuery.of(context).size;
 
     return Background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            "SEJA BEM VINDO A LILY MODAS",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "BEM VINDO A LILY MODAS",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          SvgPicture.asset(
-            'assets/icons/chat.svg',
-            height: sizeScreen.height * 0.45,
-          ),
-          RoundedButton(
-            text: "LOGIN",
-            pressFunction: (){
+            SizedBox(height: sizeScreen.height * 0.04,),
+            SvgPicture.asset(
+              'assets/icons/chat.svg',
+              height: sizeScreen.height * 0.45,
+            ),
+            SizedBox(height: sizeScreen.height * 0.05,),
+            RoundedButton(
+              text: "ENTRAR",
+              pressFunction: (){
 
-            },
-          ),
-          RoundedButton(
-            text: "LOGIN",
-            pressFunction: (){
+              },
+            ),
+            RoundedButton(
+              text: "CADASTRAR-SE",
+              color: kPrimaryLightColor,
+              textColor: Colors.black,
+              pressFunction: (){
 
-            },
-          ),
-        ],
+              },
+            ),
+          ],
+        ),
       )
     );
   }
