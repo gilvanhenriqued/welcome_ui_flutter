@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:welcome_ui_flutter/components/already_have_an_account_check.dart';
+import 'package:welcome_ui_flutter/components/rounded_button.dart';
 import 'package:welcome_ui_flutter/components/rounded_input.dart';
 import 'package:welcome_ui_flutter/components/rounded_password_input.dart';
 import 'package:welcome_ui_flutter/components/text_field_container.dart';
@@ -35,6 +37,20 @@ class BodyLogin extends StatelessWidget {
             ),
             RoundedPasswordInput(
               onChange: (value){
+
+              },
+            ),
+            RoundedButton(
+              color: kPrimaryColor,
+              pressFunction: (){
+
+              },
+              text: 'LOGIN',
+            ),
+            SizedBox(height: sizeScreen.height * 0.02,),
+            AlreadyHaveAnAccountCheck(
+              login: true,
+              press: (){
                 
               },
             )
