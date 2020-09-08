@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:welcome_ui_flutter/components/rounded_input.dart';
+import 'package:welcome_ui_flutter/components/rounded_password_input.dart';
+import 'package:welcome_ui_flutter/components/text_field_container.dart';
+import 'package:welcome_ui_flutter/constants.dart';
 import 'package:welcome_ui_flutter/pages/Login/components/background_login.dart';
 
 class BodyLogin extends StatelessWidget {
@@ -30,6 +33,11 @@ class BodyLogin extends StatelessWidget {
 
               },
             ),
+            RoundedPasswordInput(
+              onChange: (value){
+                
+              },
+            )
           ],
         ),
       ),
