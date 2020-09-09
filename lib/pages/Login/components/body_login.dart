@@ -4,7 +4,6 @@ import 'package:welcome_ui_flutter/components/already_have_an_account_check.dart
 import 'package:welcome_ui_flutter/components/rounded_button.dart';
 import 'package:welcome_ui_flutter/components/rounded_input.dart';
 import 'package:welcome_ui_flutter/components/rounded_password_input.dart';
-import 'package:welcome_ui_flutter/components/text_field_container.dart';
 import 'package:welcome_ui_flutter/constants.dart';
 import 'package:welcome_ui_flutter/pages/Login/components/background_login.dart';
 

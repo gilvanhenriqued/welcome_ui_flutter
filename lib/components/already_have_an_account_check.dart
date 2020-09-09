@@ -28,10 +28,8 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
               color: kPrimaryColor,
               fontWeight: FontWeight.bold,
             ),
-            
           ),
-        )
-        
+        )   
       ],
     );
   }
