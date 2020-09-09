@@ -6,6 +6,7 @@ import 'package:welcome_ui_flutter/components/rounded_input.dart';
 import 'package:welcome_ui_flutter/components/rounded_password_input.dart';
 import 'package:welcome_ui_flutter/constants.dart';
 import 'package:welcome_ui_flutter/pages/Login/components/background_login.dart';
+import 'package:welcome_ui_flutter/pages/Signup/signup_page.dart';
 
 class BodyLogin extends StatelessWidget {
   @override
@@ -17,6 +18,7 @@ class BodyLogin extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+           SizedBox(height: sizeScreen.height * 0.045),
             Text(
               'LOGIN',
               style: TextStyle(
@@ -50,9 +52,13 @@ class BodyLogin extends StatelessWidget {
             AlreadyHaveAnAccountCheck(
               login: true,
               press: (){
-                
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => SignupPage()),  
+                );
               },
-            )
+            ),
+            SizedBox(height: sizeScreen.height * 0.025),            
           ],
         ),
       ),

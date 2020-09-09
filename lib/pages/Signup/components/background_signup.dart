@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BackgroundSignup extends StatelessWidget {
+  final Widget child;
+
+  const BackgroundSignup({Key key, this.child}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size sizeScreen = MediaQuery.of(context).size;
@@ -23,6 +27,7 @@ class BackgroundSignup extends StatelessWidget {
             child: Image.asset('assets/images/main_bottom.png',
             width: sizeScreen.width * 0.3,),
           ),
+          child,
         ],
       ),
     );

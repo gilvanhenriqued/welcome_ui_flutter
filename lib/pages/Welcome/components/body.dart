@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:welcome_ui_flutter/components/rounded_button.dart';
 import 'package:welcome_ui_flutter/constants.dart';
 import 'package:welcome_ui_flutter/pages/Login/login_page.dart';
+import 'package:welcome_ui_flutter/pages/Signup/signup_page.dart';
 import 'package:welcome_ui_flutter/pages/Welcome/components/background.dart';
 
 class Body extends StatelessWidget {
@@ -46,7 +47,10 @@ class Body extends StatelessWidget {
               color: kPrimaryLightColor,
               textColor: Colors.black,
               pressFunction: (){
-
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (_) => SignupPage())
+                );
               },
             ),
           ],
